@@ -2,5 +2,10 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/lfbp/Desktop/PlayGroundProjects/FirstPlayground.playground/Pages/SecondPage.xcplaygroundpage#CharacterRangeLen=85&amp;CharacterRangeLoc=2304&amp;EndingColumnNumber=0&amp;EndingLineNumber=66&amp;StartingColumnNumber=0&amp;StartingLineNumber=64&amp;Timestamp=608066936.967033"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>
