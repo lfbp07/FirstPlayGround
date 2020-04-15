@@ -277,13 +277,36 @@ class ThirdViewController:UIViewController{
                     self.question.isEnabled = false
                     self.question.alpha = 0})
             })
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+1.5, execute: {
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.question.isEnabled = false
+                    self.question.alpha = 0})
+            })
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.5, execute:{
-                let FourthView = FourthViewController()
-                FourthView.modalPresentationStyle = .fullScreen
-                FourthView.modalTransitionStyle = .flipHorizontal
-                FourthView.preferredContentSize = CGSize(width: 600, height: 480)
-                self.present(FourthView, animated: true, completion: nil)
-
+                self.question.text = "I know it is not a lot..."
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.question.isEnabled = true
+                    self.question.alpha = 1
+                })
+            })
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.5, execute: {
+                UIView.animate(withDuration: 0.5, animations:{
+                    self.question.isEnabled = false
+                    self.question.alpha = 0
+                })
+            })
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.5, execute: {
+                self.question.text = "How much exercise there is in your life?"
+                self.buttonOption_0.isEnabled = true
+                self.buttonOption_1.isEnabled = true
+                self.buttonOption_2.isEnabled = true
+                self.question.isEnabled = true
+                UIView.animate(withDuration: 0.5, animations:{
+                    self.buttonOption_0.alpha = 1
+                    self.buttonOption_1.alpha = 1
+                    self.buttonOption_2.alpha = 1
+                    self.question.alpha = 1
+                })
             })
         })
     }
@@ -309,13 +332,36 @@ class ThirdViewController:UIViewController{
                     self.question.isEnabled = false
                     self.question.alpha = 0})
             })
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+1.5, execute: {
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.question.isEnabled = false
+                    self.question.alpha = 0})
+            })
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.5, execute:{
-                let FourthView = FourthViewController()
-                FourthView.modalPresentationStyle = .fullScreen
-                FourthView.modalTransitionStyle = .flipHorizontal
-                FourthView.preferredContentSize = CGSize(width: 600, height: 480)
-                self.present(FourthView, animated: true, completion: nil)
-
+                self.question.text = "Come on..."
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.question.isEnabled = true
+                    self.question.alpha = 1
+                })
+            })
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.5, execute: {
+                UIView.animate(withDuration: 0.5, animations:{
+                    self.question.isEnabled = false
+                    self.question.alpha = 0
+                })
+            })
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.5, execute: {
+                self.question.text = "How much exercise there is in your life?"
+                self.buttonOption_0.isEnabled = true
+                self.buttonOption_1.isEnabled = true
+                self.buttonOption_2.isEnabled = true
+                self.question.isEnabled = true
+                UIView.animate(withDuration: 0.5, animations:{
+                    self.buttonOption_0.alpha = 1
+                    self.buttonOption_1.alpha = 1
+                    self.buttonOption_2.alpha = 1
+                    self.question.alpha = 1
+                })
             })
 
         })
@@ -442,12 +488,30 @@ class SecondeViewController:UIViewController{
                     self.question.alpha = 0})
             })
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.5, execute:{
-                let ThirdView = ThirdViewController()
-                ThirdView.modalPresentationStyle = .fullScreen
-                ThirdView.modalTransitionStyle = .flipHorizontal
-                ThirdView.preferredContentSize = CGSize(width: 600, height: 480)
-                self.present(ThirdView, animated: true, completion: nil)
-
+                self.question.text = "Let's try again..."
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.question.isEnabled = true
+                    self.question.alpha = 1
+                })
+            })
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.5, execute: {
+                UIView.animate(withDuration: 0.5, animations:{
+                    self.question.isEnabled = false
+                    self.question.alpha = 0
+                })
+            })
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.5, execute: {
+                self.question.text = "When was the last time you went to the doctor?"
+                self.buttonOption_0.isEnabled = true
+                self.buttonOption_1.isEnabled = true
+                self.buttonOption_2.isEnabled = true
+                self.question.isEnabled = true
+                UIView.animate(withDuration: 0.5, animations:{
+                    self.buttonOption_0.alpha = 1
+                    self.buttonOption_1.alpha = 1
+                    self.buttonOption_2.alpha = 1
+                    self.question.alpha = 1
+                })
             })
         })
     }
@@ -474,12 +538,30 @@ class SecondeViewController:UIViewController{
                     self.question.alpha = 0})
             })
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.5, execute:{
-                let ThirdView = ThirdViewController()
-                ThirdView.modalPresentationStyle = .fullScreen
-                ThirdView.modalTransitionStyle = .flipHorizontal
-                ThirdView.preferredContentSize = CGSize(width: 600, height: 480)
-                self.present(ThirdView, animated: true, completion: nil)
-
+                self.question.text = "Almost, one more chance ..."
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.question.isEnabled = true
+                    self.question.alpha = 1
+                })
+            })
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.5, execute: {
+                UIView.animate(withDuration: 0.5, animations:{
+                    self.question.isEnabled = false
+                    self.question.alpha = 0
+                })
+            })
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.5, execute: {
+                self.question.text = "When was the last time you went to the doctor?"
+                self.buttonOption_0.isEnabled = true
+                self.buttonOption_1.isEnabled = true
+                self.buttonOption_2.isEnabled = true
+                self.question.isEnabled = true
+                UIView.animate(withDuration: 0.5, animations:{
+                    self.buttonOption_0.alpha = 1
+                    self.buttonOption_1.alpha = 1
+                    self.buttonOption_2.alpha = 1
+                    self.question.alpha = 1
+                })
             })
 
         })
@@ -543,7 +625,6 @@ class SecondeViewController:UIViewController{
 
 class FirstViewController : UIViewController {
         
-    let text = UILabel()
     let imageBackGround = UIImage(named: "Rectangle 3.png")
     let imageBackGroundShape = UIImage(named: "Rectangle 5.png")
     let heartImage = UIImage(named: "LogoHeart.png")
