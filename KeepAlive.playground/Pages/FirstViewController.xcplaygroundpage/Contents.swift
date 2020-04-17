@@ -719,7 +719,5 @@ class FirstViewController : UIViewController {
 
 }
 let FirstView = FirstViewController()
-let SecondView = SecondeViewController()
 FirstView.preferredContentSize = CGSize(width: 600, height: 480)
-SecondView.preferredContentSize = CGSize(width: 600, height: 480)
 PlaygroundPage.current.liveView = FirstView

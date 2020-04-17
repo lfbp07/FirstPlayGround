@@ -2,7 +2,7 @@
 <playground version='6.0' target-platform='ios' display-mode='rendered'>
     <pages>
         <page name='FirstViewController'/>
-        <page name='SecondPageBeta'/>
         <page name='SecondPage'/>
+        <page name='ThirdPage'/>
     </pages>
 </playground>
