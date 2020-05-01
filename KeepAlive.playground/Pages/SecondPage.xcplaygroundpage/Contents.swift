@@ -85,14 +85,14 @@ class spaceView:UIViewController,SCNSceneRendererDelegate{
         textNode = SCNNode(geometry: score)
         scorePositioning(sceneView: sceneView)
         sceneView.scene?.rootNode.addChildNode(textNode)
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 20, execute: {
+        /*DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 16, execute: {
             self.sceneView.isPlaying = false
             let end = EndViewController()
             end.modalPresentationStyle = .fullScreen
             end.modalTransitionStyle = .flipHorizontal
             end.preferredContentSize = CGSize(width: 600, height: 480)
             self.present(end, animated: true, completion: nil)
-        })
+        })*/
         
         self.view = sceneView
     }
@@ -154,7 +154,7 @@ class spaceView:UIViewController,SCNSceneRendererDelegate{
     func moveApple(appleNode:SCNNode){
         appleNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
         appleNode.physicsField?.strength = 0
-        let randomY = Float.random(in: 40...60)
+        let randomY = Float.random(in: 60...100)
         let randomX = Float.random(in: -20..<21)
         let force = SCNVector3(randomX, randomY, 0)
         let position = SCNVector3(0.5,0.2,0)
@@ -234,7 +234,7 @@ class spaceView:UIViewController,SCNSceneRendererDelegate{
     func moveCarrot(carrotNode:SCNNode){
         carrotNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
         carrotNode.physicsField?.strength = 0
-        let randomY = Float.random(in: 40...60)
+        let randomY = Float.random(in: 60...100)
         let randomX = Float.random(in: -20..<21)
         let force = SCNVector3(randomX, randomY, 0)
         let position = SCNVector3(0.5,0.2,0)

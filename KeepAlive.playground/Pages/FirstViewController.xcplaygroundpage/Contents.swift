@@ -1,7 +1,3 @@
-/*:
- If you are like me, you do not know to stay alive.
- But if you want to know, click the arrow...
- */
 //: [Next](@next)
 import UIKit
 import PlaygroundSupport
@@ -83,7 +79,7 @@ class FourthViewController:UIViewController{
     }
     
     func configLabel(view:UIView){
-        question.text = "Are dying?"
+        question.text = "Are you dying?"
         question.backgroundColor = .clear
         question.textColor = .black
         question.textAlignment = .center
